@@ -1,9 +1,11 @@
 name: "CI"
+#on:
+#  push:
+#    branches:
+#      - master
+#  pull_request:
 on:
-  push:
-    branches:
-      - master
-  pull_request:
+  - push
 
 env:
   TEST_IMAGE_NAME: hadolint-action:${{github.sha}}
