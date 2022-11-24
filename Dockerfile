@@ -1,4 +1,4 @@
-FROM hadolint/hadolint:v2.9.3-debian
+FROM hadolint/hadolint:2.12.0-debian
 
 COPY LICENSE README.md problem-matcher.json /
 COPY hadolint.sh /usr/local/bin/hadolint.sh
